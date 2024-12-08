@@ -35,22 +35,22 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#/slide-orga73583f">What</a></li>
-<li><a href="#/slide-org413a1a5">Why</a></li>
-<li><a href="#/slide-orgd858664">How</a></li>
-<li><a href="#/slide-orgffccace">Why I had to use</a></li>
-<li><a href="#/slide-orgff4730c">Demo</a></li>
-<li><a href="#/slide-org8f7436b">References</a></li>
+<li><a href="#/slide-org1a13a36">What</a></li>
+<li><a href="#/slide-orgc5601bb">How</a></li>
+<li><a href="#/slide-org69c2277">Why</a></li>
+<li><a href="#/slide-orgbc16edf">How I used</a></li>
+<li><a href="#/slide-orga7cfad9">Demo</a></li>
+<li><a href="#/slide-org63a72a4">References</a></li>
 </ul>
 </div>
 </div>
 </section>
 
 <section>
-<section id="slide-orga73583f">
-<h2 id="orga73583f">What</h2>
+<section id="slide-org1a13a36">
+<h2 id="org1a13a36">What</h2>
 
-<div id="orge64ea62" class="figure">
+<div id="org5f29a10" class="figure">
 <p><img src="./assets/distrobox.png" alt="distrobox.png" />
 </p>
 </div>
@@ -64,8 +64,56 @@
 </section>
 </section>
 <section>
-<section id="slide-org413a1a5">
-<h2 id="org413a1a5">Why</h2>
+<section id="slide-orgc5601bb">
+<h2 id="orgc5601bb">How</h2>
+<p>
+<i>"When you run an application in Distrobox, it mainly sees your actual home directory".</i>
+</p>
+
+<p>
+<i>"Outside of your home directory, it sees the container’s filesystem."</i>
+</p>
+
+<ul>
+<li>Let's say there's a real estate with 10 plots (5 in right and left) near Pallavaram and the owner has a plan to build 2 houses on 2 plots.</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org8d7a338">
+<h3 id="org8d7a338">Consider two scenarios,</h3>
+<ol>
+<li>One on Left and Right with seperate verandah, car  parking and gates.</li>
+<li>Both on Right sharing verandah, car parking and gates.</li>
+
+</ol>
+
+<p>
+What those two corresponds ?
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-org768fcf6">
+<h3 id="org768fcf6">Comparisions</h3>
+<ul>
+<li>Real Estate - Host PC</li>
+<li>Houses (Both) - Host OS</li>
+<li>Rented House - distrobox container / docker</li>
+<li>Gate - Networking/Ports</li>
+<li>Car - USB Pendrive</li>
+<li>Tenant  helps you - Application/Functionality you wanted</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org69c2277">
+<h2 id="org69c2277">Why</h2>
 <p>
 Use containers <b>highly integrated with the hosts</b>
 </p>
@@ -87,8 +135,8 @@ You can even run entire DE (GNOME, Plasma, &#x2026;)!
 </section>
 </section>
 <section>
-<section id="slide-org4ced86c">
-<h3 id="org4ced86c">vs <a href="https://github.com/containers/toolbox">toolbx</a></h3>
+<section id="slide-org2d1b5db">
+<h3 id="org2d1b5db">vs <a href="https://github.com/containers/toolbox">toolbx</a></h3>
 <p>
 a simplified way using POSIX sh and aiming at broader compatibility.
 </p>
@@ -101,23 +149,10 @@ a simplified way using POSIX sh and aiming at broader compatibility.
 </section>
 </section>
 <section>
-<section id="slide-orgd858664">
-<h2 id="orgd858664">How</h2>
-<p>
-<i>"When you run an application in Distrobox, it mainly sees your actual home directory".</i>
-</p>
+<section id="slide-orgbc16edf">
+<h2 id="orgbc16edf">How I used</h2>
 
-<p>
-<i>"Outside of your home directory, it sees the container’s filesystem."</i>
-</p>
-
-</section>
-</section>
-<section>
-<section id="slide-orgffccace">
-<h2 id="orgffccace">Why I had to use</h2>
-
-<div id="orgab4f94c" class="figure">
+<div id="org7b6cc5b" class="figure">
 <p><img src="./assets/ros1.jpg" alt="ros1.jpg" />
 </p>
 </div>
@@ -132,8 +167,8 @@ a simplified way using POSIX sh and aiming at broader compatibility.
 </section>
 </section>
 <section>
-<section id="slide-orgff4730c">
-<h2 id="orgff4730c">Demo</h2>
+<section id="slide-orga7cfad9">
+<h2 id="orga7cfad9">Demo</h2>
 <p>
 <a href="https://fedoramagazine.org/run-distrobox-on-fedora-linux/">https://fedoramagazine.org/run-distrobox-on-fedora-linux/</a>
 </p>
@@ -141,8 +176,8 @@ a simplified way using POSIX sh and aiming at broader compatibility.
 </section>
 </section>
 <section>
-<section id="slide-org8f7436b">
-<h2 id="org8f7436b">References</h2>
+<section id="slide-org63a72a4">
+<h2 id="org63a72a4">References</h2>
 <ul>
 <li><a href="https://distrobox.it/">distrobox - Home Page</a></li>
 
