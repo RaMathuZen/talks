@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>distrobox</title>
+<meta name="author" content="Annamalai N"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css"/>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/serif.css" id="theme"/>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/plugin/highlight/zenburn.css"/>
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'https://cdn.jsdelivr.net/npm/reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide"><h1 class="title">distrobox</h1><p class="subtitle"></p>
+<h2 class="author">Annamalai N</h2>
+</section>
+<section id="sec-table-of-contents"><div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#/slide-orgbed8d2a">What</a></li>
+<li><a href="#/slide-org8e58de0">Why</a></li>
+<li><a href="#/slide-orge91fa26">How</a></li>
+<li><a href="#/slide-org4dfd449">Demo</a></li>
+<li><a href="#/slide-orgc2e986b">References</a></li>
+</ul>
+</div>
+</div>
+</section>
+
+<section>
+<section id="slide-orgbed8d2a">
+<h2 id="orgbed8d2a">What</h2>
+
+<div id="org8cba947" class="figure">
+<p><img src="./assets/distrobox.png" alt="distrobox.png" />
+</p>
+</div>
+
+<ul>
+<li>a wrapper over docker/podman</li>
+<li><b>"any distro userland to any other distro"</b></li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org8e58de0">
+<h2 id="org8e58de0">Why</h2>
+<p>
+Use containers <b>highly integrated with the hosts</b>
+</p>
+
+<p>
+and have access to,
+</p>
+<ul>
+<li>the user’s home directory</li>
+<li>networking</li>
+<li>removable devices (like USB sticks), etc</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orge91fa26">
+<h2 id="orge91fa26">How</h2>
+<p>
+<i>"When you run an application in Distrobox, it mainly sees your actual home directory".</i>
+</p>
+
+<p>
+<i>"Outside of your home directory, it sees the container’s filesystem."</i>
+</p>
+
+<ul>
+<li>Export an application or a service from inside to the container, back to the host.</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orgfa4b6d0">
+<h3 id="orgfa4b6d0">vs <a href="https://github.com/containers/toolbox">toolbx</a></h3>
+<p>
+a simplified way using POSIX sh and aiming at broader compatibility.
+</p>
+
+<p>
+<b>Use applications/services as if like they're in host !</b>
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-org8a97c1d">
+<h3 id="org8a97c1d">How I used</h3>
+
+<div id="org12865a1" class="figure">
+<p><img src="./assets/ros1.jpg" alt="ros1.jpg" />
+</p>
+</div>
+
+<ul>
+<li>ROS 1 &amp; 2 are best supported in Ubuntu</li>
+
+<li>Needed Ubuntu 22.04 for ROS2 Humble, while my main OS was Endeavour OS &amp; Fedora</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org4dfd449">
+<h2 id="org4dfd449">Demo</h2>
+<p>
+<a href="https://fedoramagazine.org/run-distrobox-on-fedora-linux/">https://fedoramagazine.org/run-distrobox-on-fedora-linux/</a>
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-orgc2e986b">
+<h2 id="orgc2e986b">References</h2>
+<ul>
+<li><a href="https://distrobox.it/">distrobox - Home Page</a></li>
+
+<li><a href="https://cloudyday.tech.blog/2022/05/14/distrobox-is-awesome/">Distrobox is Awesome - JSEvans</a></li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org6dc16fe">
+<h3 id="org6dc16fe">Q&amp;A</h3>
+</section>
+</section>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+slideNumber:true,
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }]
+
+});
+
+</script>
+</body>
+</html>

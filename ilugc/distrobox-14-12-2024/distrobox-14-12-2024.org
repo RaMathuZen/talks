@@ -1,0 +1,60 @@
+#+title: distrobox 
+#+author: Annamalai N
+
+#+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js
+#+REVEAL_PLUGINS: (highlight)
+#+REVEAL_HLEVEL: 2
+#+REVEAL_THEME: serif
+#+REVEAL_MARGIN: 0.04
+#+REVEAL_MIN_SCALE: 0.2
+#+REVEAL_MAX_SCALE: 2.0
+#+REVEAL_INIT_OPTIONS: slideNumber:true
+#+OPTIONS: timestamp:nil toc:1 num:nil
+
+* What
+[[./assets/distrobox.png]]
+
+- a wrapper over docker/podman
+- *"any distro userland to any other distro"*
+
+* Why 
+
+Use containers *highly integrated with the hosts*
+
+and have access to,
+  - the user’s home directory
+  - networking
+  - removable devices (like USB sticks), etc
+    
+* How
+
+/"When you run an application in Distrobox, it mainly sees your actual home directory"./
+
+/"Outside of your home directory, it sees the container’s filesystem."/
+
+- Export an application or a service from inside to the container, back to the host.
+
+** vs [[https://github.com/containers/toolbox][toolbx]]
+
+a simplified way using POSIX sh and aiming at broader compatibility.
+
+*Use applications/services as if like they're in host !*
+
+** How I used 
+[[./assets/ros1.jpg]]
+
+- ROS 1 & 2 are best supported in Ubuntu
+
+- Needed Ubuntu 22.04 for ROS2 Humble, while my main OS was Endeavour OS & Fedora
+
+* Demo
+
+https://fedoramagazine.org/run-distrobox-on-fedora-linux/
+  
+* References
+
+- [[https://distrobox.it/][distrobox - Home Page]]
+  
+- [[https://cloudyday.tech.blog/2022/05/14/distrobox-is-awesome/][Distrobox is Awesome - JSEvans]]
+
+** Q&A
